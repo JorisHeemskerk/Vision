@@ -1,0 +1,56 @@
+=============== MoSCoW ===============
+
+Must have:
+- A way to decide wich letter is in a given image.
+- Shape Contexts as a feature to recognise letters.
+- Documented experiments.
+- Documented results and conclusion.
+
+Should have:
+- Scale Invariant Feature Transform as a feature to recognise letters.
+
+Could have:
+- Maximum Response of filters as a feature to recognise letters.
+
+Wont Have:
+- Any simelaritys between my work and Rick Horemans work (same challenge).
+
+
+============== Planning ==============
+
+Week 1:
+- Deciding upon paper.
+- Establishing github page.
+
+Week 2:
+- Diving into paper.
+- Deciding MoSCoW.
+- 1st itteration of this planning.
+
+Week 3:
+- Extensive research into Shape Contexts.
+- Setting up workspace
+- Potentially revisit planning.
+
+Week 4:
+- Extensive research into Scale Invariant Feature Transform.
+- Extensive research into Maximum Response of filters.
+- Finish neccicary homework assignments.
+- Potentially revisit planning.
+
+Week 5:
+- Start implementing format for algorithm (reading files and allowing space to manipulate them).
+- Implementation of Shape Contexts.
+- Document experiments and results.
+- Potentially revisit planning.
+
+Week 6:
+- Implementation of Scale Invariant Feature Transform.
+- Document experiments and results.
+- Potentially revisit planning.
+
+Week 7:
+- Implementation of Maximum Response of filters.
+- Finish potential unfinished buisness.
+- Finalise documentation.
+- Deliver results
