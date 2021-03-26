@@ -6,7 +6,8 @@ from skimage import io, feature, color, exposure
 from sklearn import svm
 from joblib import load
 
-clf = load('npy/clf.joblib')
+clf = load('npy/clfCanny.joblib')
+imgSize = 13
 
 # read all testing data from the npy files
 print('Reading all npy files...', end='\r')
@@ -17,12 +18,12 @@ with open('npy/test_labels.npy', 'rb') as f:
 print('Done reading all npy files.')
 
 # Put test images through filters and save them in test_img_edges.
-test_img_edges = np.empty((len(test_img), 100, 100))
+test_img_edges = np.empty((len(test_img), imgSize, imgSize))
 for i in range(len(test_img)):
     img = color.rgb2gray(test_img[i])
     p2, p98 = np.percentile(img, (2, 98))
     img_rescale = exposure.rescale_intensity(img, in_range=(p2, p98))
-    edges = feature.canny(img_rescale, sigma=5)
+    edges = feature.canny(img_rescale, sigma=0)
     test_img_edges[i] = edges
     percentage = round(i/(len(test_img)-1)*100, 2)
     print('Loading all testing images: [{}{}{}]  {}'.format( ('=' * int(percentage//10) ), ('>' if percentage < 100 else ''), ('.' * int(10-(((percentage)//10))-1)), percentage ), end='\r')

@@ -8,13 +8,14 @@ from skimage.transform import resize
 mat = scipy.io.loadmat('Lists/English/Img/lists.mat')
 all_names = mat['list'][0][0][0]
 all_labels = mat['list'][0][0][2]
-all_img = np.empty((len(all_names), 100, 100, 3))
+imgSize = 13
+all_img = np.empty((len(all_names), imgSize, imgSize, 3))
 
 # make and save all images into all_img.npy
 for i in range(len(all_names)):
     # TODO: miss alleen good img pakken
     filename = os.path.join('Data/Img/' + all_names[i] + '.png')
-    all_img[i] =  resize(skimage.io.imread(filename), (100, 100, 3))
+    all_img[i] =  resize(skimage.io.imread(filename), (imgSize, imgSize, 3))
     percentage = round(i/(len(all_names)-1)*100, 2)
     print('Loading all images: [{}{}{}]  {}'.format( ('=' * int(percentage//10) ), ('>' if percentage < 100 else ''), ('.' * int(10-(((percentage)//10))-1)), percentage ), end='\r')
 print('')
@@ -22,7 +23,7 @@ print('')
 
 # Derive and save all training images and labels into train_img.npy and train_labels.npy
 train_indexes = mat['list'][0][0][8]
-train_img = np.empty((len(train_indexes) * len(train_indexes[0]), 100, 100, 3))
+train_img = np.empty((len(train_indexes) * len(train_indexes[0]), imgSize, imgSize, 3))
 train_labels = np.empty(len(train_indexes) * len(train_indexes[0]))
 iterator = 0
 
@@ -45,7 +46,7 @@ with open('npy/train_labels.npy', 'wb') as f:
 
 # Derive and save all testing images and labels into test_img.npy and test_labels.npy
 test_indexes = mat['list'][0][0][6]
-test_img = np.empty((len(test_indexes) * len(test_indexes[0]), 100, 100, 3))
+test_img = np.empty((len(test_indexes) * len(test_indexes[0]), imgSize, imgSize, 3))
 test_labels = np.empty(len(test_indexes) * len(test_indexes[0]))
 iterator = 0
 for i in range(len(test_indexes)):

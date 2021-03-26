@@ -12,9 +12,7 @@ In deze paper gebruiken ze de volgende methodes:
 - Maximum Response of filters 
 - Patch descriptor
 
-Ik zal hier (na meer research gedaan te hebben) een selectie van maken of eventueel zelf nog andere methodes bij pakken om te de character te bepalen uit een immage.
+Ik heb na meer research gedaan te hebben voor deze paper besloten niet de gebruikte methodes in te zetten, aangezien het me te lang duurde om de methodes te begrijpen. Ik ga een SVM gebruiken om mijn predicties op te doen en ik ga over mijn images een vorm van edge detection gebruiken.
 
 Ik heb hiervoor de dataset van de paper gevonden.
 http://www.ee.surrey.ac.uk/CVSSP/demos/chars74k/
-
-Ik heb met Diederik in de les op dinsdag overlegd of dit zou voldoen aan de eisen van het project en het leek erop dat dit correct was.
