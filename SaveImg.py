@@ -13,7 +13,6 @@ all_img = np.empty((len(all_names), imgSize, imgSize, 3))
 
 # make and save all images into all_img.npy
 for i in range(len(all_names)):
-    # TODO: miss alleen good img pakken
     filename = os.path.join('Data/Img/' + all_names[i] + '.png')
     all_img[i] =  resize(skimage.io.imread(filename), (imgSize, imgSize, 3))
     percentage = round(i/(len(all_names)-1)*100, 2)

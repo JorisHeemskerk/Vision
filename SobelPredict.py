@@ -6,7 +6,7 @@ from skimage import io, feature, color, exposure, filters
 from sklearn import svm
 from joblib import load
 
-imgSize = 6
+imgSize = 13
 
 clf = load('npy/clfSobel.joblib')
 

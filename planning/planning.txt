@@ -1,5 +1,7 @@
 =============== MoSCoW ===============
 
+Before discussing the dificulty level of my challenge these were my requirements:
+
 Must have:
 - A way to decide wich letter is in a given image.
 - Shape Contexts as a feature to recognise letters.
@@ -15,6 +17,24 @@ Could have:
 Wont Have:
 - Any simelaritys between my work and Rick Horemans work (same challenge).
 
+After discussing the dificulty of my challenge and coming to the realisation that its not practical to impement these features i have revisted my planning.
+
+Must have:
+- A way to decide wich letter is in a given image.
+- A form of edge detection to be used.
+- Documented experiments.
+- Documented results and conclusion.
+
+Should have:
+- Two different edge detection algorithms to do the shape recognition
+- The use of other filters to enhance the base image, before the shape recognition.
+- progress bars letting the person running the program know how long they should expect the program to take.
+
+Could have:
+- Set up the program(s) to allow for expantion or inclusion of other datasets.
+
+Wont Have:
+- Any simelaritys between my work and Rick Horemans work (same challenge).
 
 ============== Planning ==============
 
@@ -23,34 +43,43 @@ Week 1:
 - Establishing github page.
 
 Week 2:
-- Diving into paper.
-- Deciding MoSCoW.
+- diving into paper.
+- deciding MoSCoW.
 - 1st itteration of this planning.
 
 Week 3:
-- Extensive research into Shape Contexts.
-- Setting up workspace
-- Potentially revisit planning.
+- extensive research into Shape Contexts
+- setting up workspace
+- potentially revisit planning
 
 Week 4:
-- Extensive research into Scale Invariant Feature Transform.
-- Extensive research into Maximum Response of filters.
-- Finish neccicary homework assignments.
-- Potentially revisit planning.
+- extensive research into Scale Invariant Feature Transform
+- extensive research into Maximum Response of filters
+- finish necessary homework assignments
+- revisit planning
 
 Week 5:
-- Start implementing format for algorithm (reading files and allowing space to manipulate them).
-- Implementation of Shape Contexts.
-- Document experiments and results.
-- Potentially revisit planning.
+- finish weekly exercise 5 and the start weekly excersize 6 
+- revisit planning
 
 Week 6:
-- Implementation of Scale Invariant Feature Transform.
-- Document experiments and results.
-- Potentially revisit planning.
+- fixing the github corruption
+- finish weekly exercise 6 
+- settin up the work enviroment
+- start implementing a way to read all data from the dataset
+- majorly revisit planning
+- starty documentation
 
 Week 7:
-- Implementation of Maximum Response of filters.
-- Finish potential unfinished buisness.
-- Finalise documentation.
-- Deliver results
+- implementation of algorithms (rgb2gray, rescale_intensity, Canny, Sobel, SVM)
+- finalise documentation
+- submit results
+
+I have to admit that this is a long ways away from being a good planning. Yet it is accurate to what i did each week.
+If given the chance to redo all i would have crammed more weekly excersizes into less time, so that i could start implementations at around week 4.
+This is, i think, better, because you dont start out with all of the necessary knowledge. You do however get the knowledge from the weekly excersizes.
+
+I would have also done things differently if there were no pandemic going around. It has ripped me from motivation and it has restricted my ability to learn efficiently.
+It now takes me way more time then i think it should to learn even the most simple things. Sitting in front of a teacher and listening in realtime is to me the best way to actually learn something.
+As appose to learing it via either a video or digital call. It just doesnt work for me and i get to easily distracted. 
+This is ofcourse not a excuse for my poor planning, but i think its a factor that could have influenced my ability to work efficiently.
